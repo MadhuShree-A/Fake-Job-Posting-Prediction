@@ -1,0 +1,66 @@
+{
+  "training_parameters": {
+    "dataset_shape": [
+      17880,
+      500
+    ],
+    "fraud_ratio": 0.04843400447427293,
+    "train_samples": 14304,
+    "test_samples": 3576,
+    "resampled_ratio": 0.3333333333333333
+  },
+  "ensemble_performance": {
+    "precision": 0.7564766839378239,
+    "recall": 0.8439306358381503,
+    "f1_score": 0.7978142076502732,
+    "f2_score": 0.8248587570408318,
+    "auc_roc": 0.9880842982815231,
+    "auc_pr": 0.8893311560248467,
+    "optimal_threshold": 0.45999999999999985,
+    "fraud_detection_rate": 84.39306358381504,
+    "false_alarm_rate": 1.3811342932706436
+  },
+  "individual_models": {
+    "XGBoost": {
+      "precision": 0.7606382978723404,
+      "recall": 0.8265895953757225,
+      "f1_score": 0.7922437673130194,
+      "f2_score": 0.8124999999790005,
+      "auc_roc": 0.9889539831396642,
+      "auc_pr": 0.8941207274189741
+    },
+    "LightGBM": {
+      "precision": 0.7564766839378239,
+      "recall": 0.8439306358381503,
+      "f1_score": 0.7978142076502732,
+      "f2_score": 0.8248587570408318,
+      "auc_roc": 0.987279160346447,
+      "auc_pr": 0.8883361852670244
+    },
+    "RandomForest": {
+      "precision": 0.572,
+      "recall": 0.8265895953757225,
+      "f1_score": 0.6761229314420804,
+      "f2_score": 0.7590233545403858,
+      "auc_roc": 0.9782069204493146,
+      "auc_pr": 0.7989567357623905
+    }
+  },
+  "saved_files": [
+    {
+      "model": "XGBoost Ensemble",
+      "model_file": "models/xgboost_ensemble_model.pkl",
+      "metrics_file": "models/xgboost_ensemble_metrics.json"
+    },
+    {
+      "model": "LightGBM Ensemble",
+      "model_file": "models/lightgbm_ensemble_model.pkl",
+      "metrics_file": "models/lightgbm_ensemble_metrics.json"
+    },
+    {
+      "model": "Random Forest Ensemble",
+      "model_file": "models/random_forest_ensemble_model.pkl",
+      "metrics_file": "models/random_forest_ensemble_metrics.json"
+    }
+  ]
+}

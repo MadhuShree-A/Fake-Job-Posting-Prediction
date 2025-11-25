@@ -1,0 +1,11 @@
+Metric,Value
+ROC-AUC,0.9880842982815231
+PR-AUC,0.8893311560248467
+F1-Score,0.7978142076502732
+F2-Score,0.8248587570408318
+Fraud Detection Rate (%),84.39306358381504
+False Alarm Rate (%),1.3811342932706436
+Frauds Caught,146.0
+Frauds Missed,27.0
+True Negatives,3356.0
+False Positives,47.0

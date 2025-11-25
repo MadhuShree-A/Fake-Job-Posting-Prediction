@@ -1,0 +1,25 @@
+{
+  "model_name": "Borderline SMOTE LightGBM",
+  "optimal_threshold": 0.6614741596777229,
+  "performance_metrics": {
+    "accuracy":0.9812,
+    "precision": 0.7621951219512195,
+    "recall": 0.7225433526011561,
+    "f1_score": 0.7418397626112758,
+    "specificity": 0.9885395239494563,
+    "auc_roc": 0.9743510910977904,
+    "auc_pr": 0.7876660761234762
+  },
+  "confusion_matrix": {
+    "tn": 3364,
+    "fp": 39,
+    "fn": 48,
+    "tp": 125
+  },
+  "training_info": {
+    "train_samples": 14304,
+    "test_samples": 3576,
+    "fraud_ratio": 0.04843400447427293,
+    "scale_pos_weight": 19.64665127020785
+  }
+}

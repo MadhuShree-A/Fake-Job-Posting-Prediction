@@ -1,0 +1,25 @@
+{
+  "model_name": "LightGBM Optimized",
+  "optimal_threshold": 0.7790329872374187,
+  "performance_metrics": {
+    "accuracy": 0.9748,
+    "precision": 0.8051948051948052,
+    "recall": 0.7167630057803468,
+    "f1_score": 0.7584097859327218,
+    "specificity": 0.9911842491918895,
+    "auc_roc": 0.9859933176948595,
+    "auc_pr": 0.8531894083078884
+  },
+  "confusion_matrix": {
+    "tn": 3373,
+    "fp": 30,
+    "fn": 49,
+    "tp": 124
+  },
+  "training_info": {
+    "train_samples": 14304,
+    "test_samples": 3576,
+    "fraud_ratio": 0.04843400447427293,
+    "scale_pos_weight": 19.64665127020785
+  }
+}

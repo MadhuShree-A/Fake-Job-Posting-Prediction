@@ -1,0 +1,8 @@
+{
+    "Model": "LogisticRegression",
+    "Train Accuracy": 0.97832774049217,
+    "Test Accuracy": 0.9742729306487695,
+    "Precision": 0.8648648648648649,
+    "Recall": 0.5549132947976878,
+    "F1-Score": 0.676056338028169
+}

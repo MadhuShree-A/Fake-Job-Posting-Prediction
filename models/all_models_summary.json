@@ -1,0 +1,76 @@
+{
+  "training_parameters": {
+    "dataset_shape": [
+      17880,
+      500
+    ],
+    "fraud_ratio": 0.04843400447427293,
+    "train_samples": 14304,
+    "test_samples": 3576,
+    "scale_pos_weight": 19.64665127020785
+  },
+  "model_performance": [
+    {
+      "model_name": "XGBoost (Optimized)",
+      "f1_score": 0.7289719626168225,
+      "precision": 0.7905405405405406,
+      "recall": 0.6763005780346821,
+      "specificity": 0.9908903908316191,
+      "auc_roc": 0.9833825645171974,
+      "auc_pr": 0.8235790379773861,
+      "confusion_matrix": {
+        "tn": 3372,
+        "fp": 31,
+        "fn": 56,
+        "tp": 117
+      }
+    },
+    {
+      "model_name": "LightGBM (Optimized)",
+      "f1_score": 0.7584097859327218,
+      "precision": 0.8051948051948052,
+      "recall": 0.7167630057803468,
+      "specificity": 0.9911842491918895,
+      "auc_roc": 0.9859933176948595,
+      "auc_pr": 0.8531894083078884,
+      "confusion_matrix": {
+        "tn": 3373,
+        "fp": 30,
+        "fn": 49,
+        "tp": 124
+      }
+    },
+    {
+      "model_name": "Borderline-SMOTE + LightGBM",
+      "f1_score": 0.7418397626112758,
+      "precision": 0.7621951219512195,
+      "recall": 0.7225433526011561,
+      "specificity": 0.9885395239494563,
+      "auc_roc": 0.9743510910977904,
+      "auc_pr": 0.7876660761234762,
+      "confusion_matrix": {
+        "tn": 3364,
+        "fp": 39,
+        "fn": 48,
+        "tp": 125
+      }
+    }
+  ],
+  "saved_files": [
+    {
+      "model": "XGBoost Optimized",
+      "model_file": "models/xgboost_optimized_model.pkl",
+      "metrics_file": "models/xgboost_optimized_metrics.json"
+    },
+    {
+      "model": "LightGBM Optimized",
+      "model_file": "models/lightgbm_optimized_model.pkl",
+      "metrics_file": "models/lightgbm_optimized_metrics.json"
+    },
+    {
+      "model": "Borderline SMOTE LightGBM",
+      "model_file": "models/borderline_smote_lightgbm_model.pkl",
+      "metrics_file": "models/borderline_smote_lightgbm_metrics.json"
+    }
+  ]
+}

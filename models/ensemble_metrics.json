@@ -1,0 +1,27 @@
+{
+  "ensemble_performance": {
+    "accuracy":0.9843,
+    "precision": 0.7564766839378239,
+    "recall": 0.8439306358381503,
+    "f1_score": 0.7978142076502732,
+    "f2_score": 0.8248587570408318,
+    "auc_roc": 0.9880842982815231,
+    "auc_pr": 0.8893311560248467,
+    "optimal_threshold": 0.45999999999999985,
+    "fraud_detection_rate": 84.39306358381504,
+    "false_alarm_rate": 1.3811342932706436
+  },
+  "model_weights": [
+    0.4,
+    0.4,
+    0.2
+  ],
+  "optimal_threshold": 0.45999999999999985,
+  "business_impact": {
+    "frauds_caught": "146/173 (84.4%)",
+    "frauds_missed": 27,
+    "false_alarms": 47,
+    "fraud_detection_rate": 84.39306358381504,
+    "false_alarm_rate": 1.3811342932706436
+  }
+}

@@ -1,0 +1,63 @@
+======================================================================
+OPTIMIZED PREPROCESSING FOR IMBALANCED FAKE JOB DETECTION
+======================================================================
+
+[1] Loading dataset...
+✅ Dataset loaded: (17880, 18)
+✅ Fraud ratio: 4.84%
+
+[2] Handling Missing Values
+------------------------------------------------------------
+Filled missing in text column: title
+Filled missing in text column: company_profile
+Filled missing in text column: description
+Filled missing in text column: requirements
+Filled missing in text column: benefits
+Filled missing in categorical column: location
+Filled missing in categorical column: department
+Filled missing in categorical column: employment_type
+Filled missing in categorical column: required_experience
+Filled missing in categorical column: required_education
+Filled missing in categorical column: industry
+Filled missing in categorical column: function
+Filled missing in binary column: telecommuting
+Filled missing in binary column: has_company_logo
+Filled missing in binary column: has_questions
+Created binary salary_specified
+
+[3] Reducing Categorical Cardinality
+------------------------------------------------------------
+location: 3106 → 26 categories
+department: 1337 → 17 categories
+industry: 132 → 66 categories
+
+[4] Cleaning Text
+------------------------------------------------------------
+✅ Text cleaned successfully
+
+[5] Extracting Numeric Text Features
+------------------------------------------------------------
+✅ Numeric features extracted
+
+[6] Encoding Categorical Variables
+------------------------------------------------------------
+✅ Encoded categorical → 168 features
+
+[7] TF-IDF Vectorization
+------------------------------------------------------------
+✅ TF-IDF completed: (17880, 2000)
+
+[8] Scaling Numeric Features
+
+[9] Combining Features
+✅ Combined feature matrix: (17880, 2183)
+
+[10] Feature Selection (ANOVA F-test)
+✅ Final features: (17880, 500)
+
+[11] Saving Artifacts
+
+✅ ALL ARTIFACTS SAVED in /artifacts/
+✅ LOG saved at: D:\sem 5\Machine Learning\package\fake-job-detector\preprocessing_logs\preprocess_log_2025-11-06_14-18-07.txt
+
+🎉 PREPROCESSING COMPLETED SUCCESSFULLY 🎉
